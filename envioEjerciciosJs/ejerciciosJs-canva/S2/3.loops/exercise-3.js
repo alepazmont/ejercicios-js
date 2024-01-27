@@ -8,9 +8,26 @@ const placesToTravel = [
   { id: 44, name: "Filipinas" },
   { id: 59, name: "Madagascar" },
 ];
-
-for (let i in placesToTravel) {
-    if (placesToTravel[i].id === 11 || placesToTravel[i].id === 40 )
-    placesToTravel.splice(placesToTravel[i], 1)
-    console.log(placesToTravel[i])
+for (let i = placesToTravel.length - 1 ; i >= 0 ; i--) {
+  if (placesToTravel[i].id === 11 || placesToTravel[i].id === 40) {
+    placesToTravel.splice(i, 1);
+  }
 }
+
+/* EL ENUNCIADO PIDE EL ARRAY, ASÍ QUE:
+
+console.group("Array actualizado:");
+
+  console.log(placesToTravel);
+
+console.groupEnd() */
+
+// PERO ASÍ ME GUSTA MÁS CÓMO QUEDA :)
+
+console.group("Lista de lugares actualizada:");
+
+for (places of placesToTravel) {
+  console.log( ("‣ ") + places.name);
+
+}
+console.groupEnd()

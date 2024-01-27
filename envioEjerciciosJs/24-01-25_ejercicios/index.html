@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script defer src="main.js"></script>
+        <style>
+            .hidden {
+                display: none;
+            }
+
+            .red {
+                color: red;
+            }
+
+            .green {
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form id="form">
+            <label for="password">Password</label>
+            <input name="password" id="password"/>
+            <br />
+            <div id="passwordRequirements" class="hidden">
+                <p>La contraseña debe tener mínimo:</p>
+                <ul>
+                    <li><span id="charRequirement" class="red">✘</span>1 letra</li>
+                    <li><span id="numberRequirement" class="red">✘</span>1 número</li>
+                    <li><span id="specialCharacterRequirement" class="red">✘</span>1 arroba (@)</li>
+                </ul> 
+            </div>
+        </form>
+    </body>
+</html>

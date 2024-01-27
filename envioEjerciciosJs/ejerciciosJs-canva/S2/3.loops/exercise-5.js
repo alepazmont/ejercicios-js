@@ -15,4 +15,4 @@ for (let i of toys) {
     popularToys.push(i)
   }
 }
-console.log(popularToys)
+console.log("Juguetes del array con más de 15 ventas:\n", popularToys)

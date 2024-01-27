@@ -8,3 +8,17 @@ const movies = [
     {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
+let movieCategories = []
+let categoriesList = []
+
+for (let movie of movies) {
+    for (let category of movie.categories)
+        if (!movieCategories.includes(category)) {
+         movieCategories.push(category);
+        }
+}
+console.group("Lista de categorías de películas:")
+    for (let i of movieCategories) {
+        console.log(i)
+    }
+    console.groupEnd()
