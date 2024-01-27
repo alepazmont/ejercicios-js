@@ -65,6 +65,11 @@ swap(campeonesEspaña2010, 6, 15, 87);
 swap(campeonesEspaña2010, 9, 11, 106);
 console.groupEnd()
 
+console.log("¡Andres Iniesta marca en el minuto 115!")
+
+console.log("PI, PI, PIIIIIIIII\n¡Final del partido!\n¡ESPAÑA CAMPEONA DEL MUNDO!")
+
+
 console.group("Once final:")
 for (let i = 0; i < campeonesEspaña2010.length; i++) {
     const jugador = campeonesEspaña2010[i];
