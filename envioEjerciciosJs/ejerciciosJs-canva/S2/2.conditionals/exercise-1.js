@@ -10,28 +10,27 @@ const alumns = [
 ];
 
 for (let i in alumns) {
-    let trimestresAprobados = 0;
-    ;
-    
-    if (alumns[i].T1 === true) {
-        trimestresAprobados++
-    }
-    if (alumns[i].T2 === true) {
-        trimestresAprobados++
-    }
-    if (alumns[i].T3 === true) {
-        trimestresAprobados++
-    }
-    alumns[i].numeroTrimestresAprobados = trimestresAprobados;
+  let trimestresAprobados = 0;
+  if (alumns[i].T1 === true) {
+    trimestresAprobados++;
+  }
+  if (alumns[i].T2 === true) {
+    trimestresAprobados++;
+  }
+  if (alumns[i].T3 === true) {
+    trimestresAprobados++;
+  }
+  alumns[i].numeroTrimestresAprobados = trimestresAprobados;
 
-    if (trimestresAprobados >= 2) {
-        alumns[i].isApproved = true
-        console.log(`El/La alumno/a ${alumns[i].name} tiene ${trimestresAprobados} trimestres aprobados. Pasa de curso. `);
-
-    } else {
-        alumns[i].isApproved = false
-        console.log(`El/La alumno/a ${alumns[i].name} tiene ${trimestresAprobados} trimestres aprobados. Tiene que repetir. `);
-    }
-
-
+  if (trimestresAprobados >= 2) {
+    alumns[i].isApproved = true;
+    console.log(
+      `El/La alumno/a ${alumns[i].name} tiene ${trimestresAprobados} trimestres aprobados. Pasa de curso. `
+    );
+  } else {
+    alumns[i].isApproved = false;
+    console.log(
+      `El/La alumno/a ${alumns[i].name} tiene ${trimestresAprobados} trimestres aprobados. Tiene que repetir. `
+    );
+  }
 }

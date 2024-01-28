@@ -13,4 +13,4 @@ console.group(`Los elementos del array son:`);
 for (let destination of placesToTravel) {
   console.log(destination);
 }
-console.groupEnd()
+console.groupEnd();

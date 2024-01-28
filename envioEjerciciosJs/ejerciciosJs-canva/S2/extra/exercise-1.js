@@ -8,17 +8,18 @@ const movies = [
     {title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller']},
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
-let movieCategories = []
-let categoriesList = []
+
+let movieCategories = [];
+let categoriesList = [];
 
 for (let movie of movies) {
-    for (let category of movie.categories)
-        if (!movieCategories.includes(category)) {
-         movieCategories.push(category);
-        }
-}
-console.group("Lista de categorías de películas:")
-    for (let i of movieCategories) {
-        console.log(i)
+  for (let category of movie.categories)
+    if (!movieCategories.includes(category)) {
+      movieCategories.push(category);
     }
-    console.groupEnd()
+}
+console.group("Lista de categorías de películas:");
+for (let i of movieCategories) {
+  console.log(i.charAt(0).toUpperCase() + i.slice(1)); //Sé que esto es posterior... pero tuve que buscar. La primera en minúscula me estaba haciendo saltar el TOC...
+}
+console.groupEnd();

@@ -11,8 +11,8 @@ const toys = [
 ];
 
 for (let i of toys) {
-  if (i.sellCount > 15 ) {
-    popularToys.push(i)
+  if (i.sellCount > 15) {
+    popularToys.push(i);
   }
 }
-console.log("Juguetes del array con más de 15 ventas:\n", popularToys)
+console.log("Juguetes del array con más de 15 ventas:\n", popularToys);

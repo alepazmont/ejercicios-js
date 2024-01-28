@@ -8,7 +8,7 @@ const placesToTravel = [
   { id: 44, name: "Filipinas" },
   { id: 59, name: "Madagascar" },
 ];
-for (let i = placesToTravel.length - 1 ; i >= 0 ; i--) {
+for (let i = placesToTravel.length - 1; i >= 0; i--) {
   if (placesToTravel[i].id === 11 || placesToTravel[i].id === 40) {
     placesToTravel.splice(i, 1);
   }
@@ -27,7 +27,6 @@ console.groupEnd() */
 console.group("Lista de lugares actualizada:");
 
 for (places of placesToTravel) {
-  console.log( ("‣ ") + places.name);
-
+  console.log("‣ " + places.name);
 }
-console.groupEnd()
+console.groupEnd();

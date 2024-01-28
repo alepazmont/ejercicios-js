@@ -30,25 +30,32 @@ function deleteEntry(array, text) {
 }
 
 const avengers = [
-    'Iron Man',
-    'Capitán América',
-    'Thor',
-    'Hulk',
-    'Viuda Negra',
-    'Ojo de Halcón',
-    'Máquina de Guerra',
-    'Visión',
-    'Bruja Escarlata',
-    'Falcon',
-    'Ant-Man'
+  "Iron Man",
+  "Capitán América",
+  "Thor",
+  "Hulk",
+  "Viuda Negra",
+  "Ojo de Halcón",
+  "Máquina de Guerra",
+  "Visión",
+  "Bruja Escarlata",
+  "Falcon",
+  "Ant-Man",
 ];
 
 console.log(`Antes de Infinity War, los Vengadores eran:`);
 for (let i = 0; i < avengers.length - 1; i++) {
-  console.log(i+1,avengers[i]);
+  console.log(i + 1, avengers[i]);
 }
 
-console.log("y", avengers.length, avengers[avengers.length - 1], "\ny en total eran", avengers.length, "integrantes.");
+console.log(
+  "y por último,",
+  avengers.length,
+  avengers[avengers.length - 1],
+  "\ny en total eran",
+  avengers.length,
+  "integrantes."
+);
 
 deleteEntry(avengers, "Iron Man");
 deleteEntry(avengers, "Capitán América");
@@ -57,9 +64,16 @@ deleteEntry(avengers, "Visión");
 
 console.log("\nPero murieron 3 y uno se jubiló.\n");
 
-console.log("Después de End Game, los Vengadores son")
+console.log("Después de End Game, los Vengadores son");
 for (let i = 0; i < avengers.length - 1; i++) {
-    console.log(i+1,avengers[i]);
+  console.log(i + 1, avengers[i]);
 }
-  
-console.log("y", avengers.length, avengers[avengers.length - 1], "\ny ahora son", avengers.length, "integrantes.");
+
+console.log(
+  "y",
+  avengers.length,
+  avengers[avengers.length - 1],
+  "\ny ahora son",
+  avengers.length,
+  "integrantes."
+);
