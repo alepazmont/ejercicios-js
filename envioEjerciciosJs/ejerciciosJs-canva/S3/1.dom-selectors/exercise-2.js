@@ -1,6 +1,6 @@
 /* Dado el siguiente html usa querySelector para mostrar por consola el p con 
 el id #pillado*/
 
-let button = document.querySelector("button#pillado")
+let pPillado = document.querySelector("p#pillado")
 
-console.log(button)
+console.log(pPillado)

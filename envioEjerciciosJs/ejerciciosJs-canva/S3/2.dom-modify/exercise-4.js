@@ -2,6 +2,6 @@
 
 
   const p = document.createElement("p");
-  p.textContent = "Este texto está en un párrafo que a su vez está en un div.";
+  p.textContent = "Soy dinámico!";
   
   document.body.appendChild(p);

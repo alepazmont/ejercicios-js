@@ -14,13 +14,13 @@ function sumaLista(a) {
         resultadoSuma += a[i];
     }
     return resultadoSuma;
-
 }
 
 function calcularPromedioLista(a) {
      if (a.length === 0) {
-        return 0;
-    } 
+/*         console.log("Estás intentando sumar una lista que no tiene elementos. Si sumas 0 elementos y los divides entre 0 elementos de tu lista, el resultado es 0")
+ */        return 0;
+    }
 
     let suma = sumaLista(a)
     let promedio = suma / a.length

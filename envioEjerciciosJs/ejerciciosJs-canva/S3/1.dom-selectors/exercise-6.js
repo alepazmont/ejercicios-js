@@ -3,4 +3,4 @@
 
 let span3 = document.querySelector('[data-function="testMe"]:nth-child(3)')
 
-console.log(span3.innerHTML); 
+console.log(span3); 
