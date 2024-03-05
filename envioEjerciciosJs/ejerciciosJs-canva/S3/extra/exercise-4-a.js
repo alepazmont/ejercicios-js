@@ -12,7 +12,7 @@ const countries = [
 const mainDiv = document.createElement("div");
 mainDiv.className = "flexBox";
 
-for (country of countries) {
+for (let country of countries) {
   const div = document.createElement("div");
 
   const titulo = document.createElement("h4");

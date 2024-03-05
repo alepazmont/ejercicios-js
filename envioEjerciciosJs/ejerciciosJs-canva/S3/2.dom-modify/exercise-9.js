@@ -3,7 +3,7 @@ dentro de todos los div con la clase .fn-insert-here */
 
 const divs = document.querySelectorAll("div.fn-insert-here");
 
-for (div of divs) {
+for (let div of divs) {
   const fill = document.createElement("p");
   fill.innerText = "Voy dentro!";
   div.append(fill);

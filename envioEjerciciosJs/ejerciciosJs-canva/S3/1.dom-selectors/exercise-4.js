@@ -3,6 +3,6 @@ los elementos con la clase .pokemon */
 
 const classItems = document.querySelectorAll(".pokemon");
 
-for (classItem of classItems) {
+for (let classItem of classItems) {
 console.log(classItem)
 }

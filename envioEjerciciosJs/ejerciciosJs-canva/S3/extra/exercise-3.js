@@ -6,7 +6,7 @@ const cars = ["Mazda 6", "Ford fiesta", "Audi A4", "Toyota corola"];
 const carsList = document.querySelector('[data-function="printHere"]');
 const list = document.createElement("ul");
 
-for (car of cars) {
+for (let car of cars) {
   const li = document.createElement("li");
   li.innerText = car;
 

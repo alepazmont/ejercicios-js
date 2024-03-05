@@ -2,6 +2,6 @@
 
 const toDelete = document.getElementsByClassName("fn-remove-me");
 
-for (element of toDelete) {
+for (let element of toDelete) {
   element.remove();
 }

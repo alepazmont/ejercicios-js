@@ -54,7 +54,7 @@ const campeonesEspaña2010 = [
 /* 17 */ { nombre: 'Fernando Llorente', posicion: 'Delantero', jugando: false, titular: false }
 ];
 
-/* console.group("Once inicial:")
+ console.group("Once inicial:")
 for (let i = 0; i < campeonesEspaña2010.length; i++) {
     const jugador = campeonesEspaña2010[i];
     if (jugador.titular) {
@@ -89,9 +89,9 @@ for (const jugador of campeonesEspaña2010) {
         console.log(`${jugador.nombre} - ${jugador.posicion}`);
     }
 }
-console.groupEnd() */
+console.groupEnd()
 
-console.group("COMPROBACIONES:");
+/* console.group("COMPROBACIONES:");
 
 console.log(campeonesEspaña2010)
 
@@ -115,4 +115,4 @@ swap(campeonesEspaña2010, 13, 15, 60);
 console.log("Cambio exitoso:");
 swap(campeonesEspaña2010, 17, 2, 60);
 
-console.groupEnd();
+console.groupEnd(); */

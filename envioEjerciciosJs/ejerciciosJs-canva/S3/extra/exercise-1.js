@@ -5,7 +5,7 @@ const countries = ['Japón', 'Nicaragua', 'Suiza', 'Australia', 'Venezuela'];
 
 const countriesList = document.createElement("ul");
 
-for (country of countries) {
+for (let country of countries) {
     const countryLi = document.createElement("li");
     countryLi.innerText = country;
     countriesList.append(countryLi)

@@ -2,6 +2,6 @@
 
 const classfn = document.querySelectorAll("p.fn-remove-me");
 
-for (element of classfn) {
+for (let element of classfn) {
   element.remove();
 }

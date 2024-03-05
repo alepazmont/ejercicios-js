@@ -12,7 +12,7 @@ const countries = [
 const mainDiv = document.createElement("div");
 mainDiv.className = "flexBox";
 
-for (country in countries) {
+for (let country in countries) {
   const div = document.createElement("div");
 
   const titulo = document.createElement("h4");
@@ -44,5 +44,11 @@ buttonToDelete.addEventListener("click", function () {
   const divs = document.querySelectorAll("div");
   const lastDiv = divs[divs.length - 1];
 
+  if (divs.length === 1) {
+    alert("No hay elementos a eliminar") 
+    return;
+   } else {
+
   lastDiv.remove();
+  }
 });

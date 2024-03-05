@@ -3,6 +3,6 @@ todos los elementos con el atributo data-function="testMe". */
 
 let spans = document.querySelectorAll('span[data-function="testMe"]');
 
-for (span of spans) {
+for (let span of spans) {
     console.log(span)
 }

@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main_div{
+    width: 400px;
+    text-align: center;
+}
+img{
+    object-fit: cover;
+    object-position: top;
+    width: 65%;
+    height: 200px;
+}
+.main_div:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  .main_div:nth-child(odd) {
+    background-color: lightgreen;
+  }

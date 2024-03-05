@@ -2,6 +2,6 @@
 
 let paragraphs = document.querySelectorAll("p")
 
-for (paragraph of paragraphs) {
+for (let paragraph of paragraphs) {
     console.log(paragraph.innerHTML);
 };
